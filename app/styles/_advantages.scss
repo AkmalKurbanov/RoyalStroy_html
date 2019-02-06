@@ -1,0 +1,71 @@
+.advantages {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  &:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(4, 5, 4, 0.55);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: bottom;
+  }
+
+  &__list {
+    padding-top: 35px;
+
+    @media (max-width: 1199.98px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+
+    @media (max-width: 1199.98px) {
+      margin-top: 25px;
+    }
+
+    &--firstItem {
+      @media (max-width: 767.98px) {
+        margin-top: 0;
+      } 
+    }
+  }
+
+  &__icon {
+    font-size: 85px;
+    color: $wc;
+    line-height: 1;
+
+    @media (max-width: 1199.98px) {
+      font-size: 75px;
+      line-height: 0.6;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 65px;
+    }
+  }
+
+  &__desc {
+    p {
+      color: $wc;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.25;
+      text-transform: uppercase;
+
+      @media (max-width: 1199.98px) {
+        font-size: 13px;
+      }
+    }
+  }
+}

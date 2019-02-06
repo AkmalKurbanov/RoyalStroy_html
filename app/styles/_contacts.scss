@@ -1,0 +1,158 @@
+.contacts {
+  background-color: #f5f6fa; 
+  &__map {
+    width: 100%;
+    max-width: 100%;
+    min-height: 576px;
+    margin-top: 60px;
+
+    @media (max-width: 1199.98px) {
+      min-height: 500px;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 991.98px) {
+      min-height: 450px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 767.98px) {
+      min-height: 400px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 767.98px) {
+      min-height: 350px;
+      margin-top: 22px;
+    }
+  }
+
+  &__list {
+    padding-top: 60px;
+
+    @media (max-width: 991.98px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: 35px;
+    }
+
+    @media (max-width: 575.98px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (max-width: 767.98px) {
+      max-width: 320px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    &--lastItem {
+      margin-bottom: 0;
+    }
+  }
+
+  &__iconWrap {
+    position: relative;
+    margin-bottom: 20px;
+
+    @media (max-width: 767.98px) {
+      max-width: 150px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      width: 100%;
+      height: 2px;
+      background-color: $mc;
+      left: 50%;
+    }
+  }
+
+  &__icon {
+    max-width: 55px;
+    background-color: #f5f6fa;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+
+    i {
+      font-size: 30px;
+      color: $mc;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65px;
+
+    p,
+    li,
+    a {
+      font-size: 18px;
+      font-weight: 400;
+
+      @media (max-width: 1199.98px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 991.98px) {
+        font-size: 15px;
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.3;
+      color: $bc;
+    }
+
+    a {
+      display: block;
+      transition: all .3s;
+      color: $bc;
+
+      &:hover {
+        color: $mc;
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      @media (max-width: 767.98px) {
+        margin-top: 10px;
+      }
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-bottom: 5px;
+        color: $sc;
+
+        a {
+          color: $sc;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

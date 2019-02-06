@@ -1,0 +1,146 @@
+.news {
+  &__list {
+    padding-top: 60px;
+
+    @media (max-width: 1199.98px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 991.98px) {
+      padding-top: 30px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: 20px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    position: relative;
+    min-height: 430px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    max-width: 651px;
+    width: 100%;
+    min-height: 320px;
+    box-shadow: 0px 17px 40px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 1199.98px) {
+      max-width: 600px;
+    }
+
+    @media (max-width: 991.98px) {
+      position: relative;
+      max-width: 100%;
+      min-height: auto;
+      box-shadow: none;
+      margin-top: 10px;
+      margin: 0;
+    }
+
+    a {
+      padding: 15px 25px;
+      display: block;
+      text-decoration: none;
+      color: $bc;
+
+      @media (max-width: 991.98px) {
+        padding: 0;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin: 0;
+
+        @media (max-width: 1199.98px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &--secondOption {
+      left: 0;
+      text-align: right;
+    }
+  }
+
+  &__img {
+    max-width: 570px;
+    width: 100%;
+
+    @media (max-width: 991.98px) {
+      max-width: 100%;
+    }
+
+    &--left {
+      float: left;
+      margin-right: 30px;
+
+      @media (max-width: 991.98px) {
+        float: none;
+        margin: 0;
+      }
+    }
+
+    &--right {
+      float: right;
+      margin-left: 30px;
+
+      @media (max-width: 991.98px) {
+        float: none;
+        margin: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__date {
+    padding-top: 25px;
+
+    p {
+      color: $sc;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    &--anotherDate {
+      text-align: right;
+    }
+  }
+
+  &__caption {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+    @media (max-width: 1199.98px) {
+      font-size: 18px;
+    }
+  }
+
+  &__subCaption {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    @media (max-width: 1199.98px) {
+      font-size: 17px;
+    }
+  }
+}

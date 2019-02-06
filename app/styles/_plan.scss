@@ -1,0 +1,65 @@
+.plan {
+  padding-top: 0;
+
+  &__wrap {
+    padding-top: 50px;
+
+    @media (max-width: 1199.98px) {
+      padding-top: 45px;
+    }
+
+    @media (max-width: 991.98px) {
+      padding-top: 35px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: 25px;
+    }
+
+    @media (max-width: 575.98px) {
+      padding-top: 22px;
+    }
+  }
+
+  &__drawing {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+      .part {
+        opacity: 0;
+        transition: all .3s;
+        cursor: pointer;
+        fill: #FAF1E3;
+
+        &:hover {
+          fill: #ff7b7b;
+          opacity: .5;
+        }
+
+        &--static {
+          fill: #ff7b7b;
+          opacity: .7;
+
+          &:hover {
+            opacity: .7;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

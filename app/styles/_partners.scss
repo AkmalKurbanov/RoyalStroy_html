@@ -1,0 +1,50 @@
+.partners {
+  background-color: #f5f6fa;
+
+  &__desc {
+    padding-top: 20px;
+
+    @media (max-width: 767.98px) {
+      padding-top: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $bc;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+
+  &__list {
+    padding-top: 50px;
+
+    @media (max-width: 1199.98px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 991.98px) {
+      padding-top: 30px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-top: 20px;
+    }
+
+    @media (max-width: 575.98px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__imgWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
